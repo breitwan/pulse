@@ -51,7 +51,7 @@ server.export(0x01, MathService.class, MathServiceImpl::new);
 
 server.run();
 Runtime.getRuntime().addShutdownHook(new Thread(server::close, "pulse-server-shutdown-hook"));
-        server.await();
+server.await();
 ```
 
 ### 4. Set up the Client
